@@ -14,4 +14,13 @@ public class CalculatorTest {
         // Assert
         assertEquals(8, result, "3 + 5 = 8");
     }
+
+    @Test
+    public void testSubtract() {
+
+        Calculator calculator = new Calculator();
+
+        int result = calculator.subtract(10, 4);
+        assertEquals(6, result, "10-4=6");
+    }
 }
