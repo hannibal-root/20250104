@@ -21,4 +21,11 @@ public class StringManipulatorTest {
     public void testIsPalindromeFalse() {
         assertFalse(manipulator.isPalindrome("hello"), "hello should not be a palindrome");
     }
+
+    @Test
+    public void testReplaceSubstring() {
+
+        assertEquals("almabokor", manipulator.replaceSubstring("almafa", "fa", "bokor"), "almabokor");
+    }
+
 }
