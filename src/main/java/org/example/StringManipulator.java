@@ -27,5 +27,12 @@ public class StringManipulator {
     public String getSubstring(String str, int start, int end) {
         return str.substring(start, end);
     }
+
+    public boolean areStringsEqualIgnoreCase(String str1, String str2) {
+        if (str1 == null || str2 == null) {
+            return false;  // Return false if any string is null
+        }
+        return str1.equalsIgnoreCase(str2);
+    }
 }
 
