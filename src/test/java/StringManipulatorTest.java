@@ -27,5 +27,13 @@ public class StringManipulatorTest {
 
         assertEquals("almabokor", manipulator.replaceSubstring("almafa", "fa", "bokor"), "almabokor");
     }
+    @Test
+    public void testisNumericTrue(){
+        assertTrue(manipulator.isNumeric("56"),"56 should be a number");
+    }
+    @Test
+    public void testisNumericFalse(){
+        assertFalse(manipulator.isNumeric("5hat"),"5hat contains letters");
+    }
 
 }
