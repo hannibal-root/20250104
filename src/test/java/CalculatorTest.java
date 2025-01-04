@@ -23,4 +23,14 @@ public class CalculatorTest {
         int result = calculator.subtract(10, 4);
         assertEquals(6, result, "10-4=6");
     }
+
+    @Test
+    public void testMultiply(){
+
+        Calculator calculator = new Calculator();
+
+        int result = calculator.multiply(5,5);
+
+        assertEquals(25, result,"5 * 5 = 25");
+    }
 }
